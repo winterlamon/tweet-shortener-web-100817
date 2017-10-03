@@ -17,14 +17,13 @@ end
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
   dictionary_keys = dictionary.keys
-  dictionary_values = dictionary.values
-#  for tweet_array & dictionary_keys
-  tweet_array
-  dictionary_keys
-  dictionary_values
-#  tweet_array.each do |word|
+    tweet_array.each do |word|
+      if dictionary_keys.include?(word)
+        word = dictionary[word]
+      end
+    end
 
-#  end
+  tweet_array.join(" ")
 end
 
 tweet = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
