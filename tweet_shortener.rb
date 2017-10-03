@@ -18,13 +18,13 @@ def word_substituter(tweet)
   tweet_array = tweet.split(" ")
   dictionary
   dictionary_keys = dictionary.keys
-    tweet_array.collect do |word|
+  new_tweet = tweet_array.collect do |word|
       if dictionary_keys.include?(word)
         word = dictionary[word]
       end
     end
 
-#  tweet_array.join(" ")
+#  new_tweet.join(" ")
 end
 
 
