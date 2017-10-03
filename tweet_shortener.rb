@@ -19,7 +19,7 @@ def word_substituter(tweet)
   dictionary
   dictionary_keys = dictionary.keys
   new_tweet = tweet_array.collect do |word|
-      if dictionary_keys.include?(word)
+      if dictionary_keys.include?(word.downcase)
         word.downcase = dictionary[word]
       else
         word
