@@ -30,12 +30,14 @@ def word_substituter(tweet)
 end
 
 
-=begin
-def bulk_tweet_shortener(array_of_tweets)
 
+def bulk_tweet_shortener(array_of_tweets)
+  array_of_tweets.collect do |tweet|
+    word_substituter(tweet)
+  end
 end
 
-
+=begin
 def sleective_tweet_shortener(tweet)
 
 end
