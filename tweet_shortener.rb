@@ -16,8 +16,12 @@ end
 
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
+  dictionary_keys = dictionary.keys
+  dictionary_values = dictionary.values
+#  for tweet_array & dictionary_keys
+    
   tweet_array.each do |word|
-    if tweet_array.include?(word) == dictionary.keys
+    for tweet_array & dictionary_keys
       tweet_array.replace(dictionary.values)
     end
   end
