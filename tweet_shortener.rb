@@ -21,7 +21,7 @@ def word_substituter(tweet)
 #  for tweet_array & dictionary_keys
 
   tweet_array.each do |word|
-    for tweet_array & dictionary_keys
+    for tweet_array &. dictionary_keys
       tweet_array.replace(dictionary.values)
     end
   end
