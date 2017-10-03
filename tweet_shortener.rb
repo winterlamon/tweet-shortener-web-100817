@@ -27,7 +27,8 @@ def word_substituter(tweet)
 #  end
 end
 
-word_substituter
+tweet = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
+word_substituter(tweet)
 
 =begin
 def bulk_tweet_shortener(array_of_tweets)
