@@ -23,9 +23,11 @@ def word_substituter(tweet)
   dictionary_keys
   dictionary_values
 #  tweet_array.each do |word|
-      
+
 #  end
 end
+
+word_substituter(tweet)
 
 =begin
 def bulk_tweet_shortener(array_of_tweets)
